@@ -10,7 +10,7 @@ This repository is **WIP**
 For now, we support only sbcl.
 
 - [X] Linux (64-bit)
-- [ ] Linux (32-bit)
+- [X] Linux (32-bit)
 - [ ] OS X (64-bit)
 - [ ] OS X (32-bit)
 - [ ] Free BSD (64-bit)
