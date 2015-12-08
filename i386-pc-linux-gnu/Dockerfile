@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM 32bit/debian:jessie
 MAINTAINER supermomonga
 
 ## Install dependencies

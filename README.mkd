@@ -17,3 +17,10 @@ For now, we support only sbcl.
 - [ ] Free BSD (32-bit)
 - [ ] Windows (64-bit)
 - [ ] Windows (32-bit)
+
+## How to use
+
+```
+docker run -it --rm --name roswell-build momonga/roswell-crossbuild:x86_64-pc-linux-gnu
+docker run -it --rm --name roswell-build momonga/roswell-crossbuild:i386-pc-linux-gnu
+```
