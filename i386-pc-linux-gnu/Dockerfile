@@ -17,6 +17,7 @@ RUN git clone git://github.com/snmsts/roswell.git\
     && make install\
     && ros setup
 
-RUN ros install sbcl --verbose
+RUN ros install sbcl
 
-CMD ros version
+ENTRYPOINT ["ros"]
+CMD ["--help"]
