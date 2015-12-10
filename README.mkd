@@ -1,5 +1,7 @@
 
-## Roswell CrossBuild
+# Roswell CrossBuild
+
+## What is it?
 
 Dockerfiles to build executable binaries from Roswell script for Linux, OS X, Free BSD, and Windows.
 
@@ -10,7 +12,7 @@ This repository is **WIP**
 For now, we support only sbcl.
 
 - [X] Linux (64-bit)
-- [X] Linux (32-bit)
+- [ ] Linux (32-bit)
 - [ ] OS X (64-bit)
 - [ ] OS X (32-bit)
 - [ ] Free BSD (64-bit)
@@ -20,6 +22,8 @@ For now, we support only sbcl.
 
 ## How to use
 
+### Create executable for Linux (64-bit)
+
 ```
 ros init your-roswell-script
 vim your-roswell-script.ros
@@ -27,6 +31,7 @@ docker pull momonga/roswell-crossbuild:x86_64-pc-linux-gnu
 docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:x86_64-pc-linux-gnu build your-roswell-script.ros
 ```
 
+### Create executable for Linux (32-bit)
 
 ```
 ros init your-roswell-script
@@ -34,3 +39,7 @@ vim your-roswell-script.ros
 docker pull momonga/roswell-crossbuild:i386-pc-linux-gnu
 docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:i386-pc-linux-gnu your-roswell-script.ros
 ```
+
+## License
+
+MIT License (see `LICENSE` file).
