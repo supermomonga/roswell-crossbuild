@@ -21,6 +21,16 @@ For now, we support only sbcl.
 ## How to use
 
 ```
-docker run -it --rm --name roswell-build momonga/roswell-crossbuild:x86_64-pc-linux-gnu
-docker run -it --rm --name roswell-build momonga/roswell-crossbuild:i386-pc-linux-gnu
+ros init your-roswell-script
+vim your-roswell-script.ros
+docker pull momonga/roswell-crossbuild:x86_64-pc-linux-gnu
+docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:x86_64-pc-linux-gnu build your-roswell-script.ros
+```
+
+
+```
+ros init your-roswell-script
+vim your-roswell-script.ros
+docker pull momonga/roswell-crossbuild:i386-pc-linux-gnu
+docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:i386-pc-linux-gnu your-roswell-script.ros
 ```

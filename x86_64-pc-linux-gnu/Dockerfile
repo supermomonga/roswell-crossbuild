@@ -19,5 +19,8 @@ RUN git clone git://github.com/snmsts/roswell.git\
 
 RUN ros install sbcl
 
+VOLUME /app
+WORKDIR /app
+
 ENTRYPOINT ["ros"]
 CMD ["--help"]
