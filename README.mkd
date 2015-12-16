@@ -3,7 +3,7 @@
 
 ## What is it?
 
-Dockerfiles to build executable binaries from Roswell script for Linux, OS X, Free BSD, and Windows.
+Dockerfiles to build executable binaries from Roswell script for Linux, OS X, FreeBSD, and Windows.
 
 This repository is **WIP**
 
@@ -15,8 +15,8 @@ For now, we support only sbcl.
 - [ ] Linux (32-bit)
 - [ ] OS X (64-bit)
 - [ ] OS X (32-bit)
-- [ ] Free BSD (64-bit)
-- [ ] Free BSD (32-bit)
+- [ ] FreeBSD (64-bit)
+- [ ] FreeBSD (32-bit)
 - [ ] Windows (64-bit)
 - [ ] Windows (32-bit)
 
