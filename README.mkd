@@ -18,7 +18,7 @@ For now, we support only sbcl.
 - [ ] FreeBSD (64-bit)
 - [ ] FreeBSD (32-bit)
 - [ ] Windows (64-bit)
-- [ ] Windows (32-bit)
+- [X] Windows (32-bit)
 
 ## How to use
 
@@ -31,14 +31,15 @@ docker pull momonga/roswell-crossbuild:x86_64-pc-linux-gnu
 docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:x86_64-pc-linux-gnu build your-roswell-script.ros
 ```
 
-### Create executable for Linux (32-bit)
+### Create executable for Windows (32-bit)
 
 ```
 ros init your-roswell-script
 vim your-roswell-script.ros
-docker pull momonga/roswell-crossbuild:i386-pc-linux-gnu
-docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:i386-pc-linux-gnu your-roswell-script.ros
+docker pull momonga/roswell-crossbuild:x86_32-windows
+docker run -v `pwd`:/app -it --rm --name roswell-build momonga/roswell-crossbuild:x86_32-windows build your-roswell-script.ros
 ```
+
 
 ## License
 
